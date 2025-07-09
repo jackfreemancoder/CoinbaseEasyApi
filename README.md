@@ -75,8 +75,8 @@ public async Task can_get_spotprice_of_ETHUSD()
 
 #### Full API Support
 ##### Data Endpoints
-* [`client.Data`](https://developers.coinbase.com/api/v2#data-endpoints) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Integration/DataTests.cs)
-* [`client.Notifications`](https://developers.coinbase.com/api/v2#notifications) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/NotificationTests.cs)
+* [`client.Data`](https://developers.coinbase.com/api/v2#data-endpoints) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Integration/DataTests.cs)
+* [`client.Notifications`](https://developers.coinbase.com/api/v2#notifications) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/NotificationTests.cs)
 
 ##### Wallet Endpoints
 * [`client.Accounts`](https://developers.coinbase.com/api/v2#accounts) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/AccountTests.cs)
