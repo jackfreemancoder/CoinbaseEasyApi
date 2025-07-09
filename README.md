@@ -59,7 +59,7 @@ var client = new CoinbaseClient(new ApiKeyConfig{ ApiKey = "...", ApiSecret = ".
 //  - Useful only for Data Endpoints that don't require authentication.
 var client = new CoinbaseClient();
 ```
-Once you have a `CoinbaseClient` object, simply call one of any of the [**Wallet Endpoints**](https://developers.coinbase.com/api/v2#wallet-endpoints) or [**Data Endpoints**](https://developers.coinbase.com/api/v2#data-endpoints). Extensive examples can be [found here](https://github.com/jackfreemancoder/CoinbaseEasyApi/tree/master/Source/CoinbaseClient.Tests/Endpoints).
+Once you have a `CoinbaseClient` object, simply call one of any of the [**Wallet Endpoints**](https://developers.coinbase.com/api/v2#wallet-endpoints) or [**Data Endpoints**](https://developers.coinbase.com/api/v2#data-endpoints). Extensive examples can be [found here](https://github.com/jackfreemancoder/CoinbaseEasyApi/tree/master/Source/CoinbaseApi.Tests/Endpoints).
 
 In one such example, to get the [spot price](https://developers.coinbase.com/api/v2#get-spot-price) of `ETH-USD`, do the following:
 ```csharp
