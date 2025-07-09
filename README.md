@@ -79,15 +79,15 @@ public async Task can_get_spotprice_of_ETHUSD()
 * [`client.Notifications`](https://developers.coinbase.com/api/v2#notifications) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/NotificationTests.cs)
 
 ##### Wallet Endpoints
-* [`client.Accounts`](https://developers.coinbase.com/api/v2#accounts) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/AccountTests.cs)
-* [`client.Addresses`](https://developers.coinbase.com/api/v2#addresses) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/AddressTests.cs)
-* [`client.Buys`](https://developers.coinbase.com/api/v2#buys) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/BuyTest.cs)
-* [`client.Deposits`](https://developers.coinbase.com/api/v2#deposits) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/DepositTests.cs)
-* [`client.PaymentMethods`](https://developers.coinbase.com/api/v2#payment-methods) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/PaymentMethodTest.cs)
-* [`client.Sells`](https://developers.coinbase.com/api/v2#sells) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/SellTest.cs)
-* [`client.Transactions`](https://developers.coinbase.com/api/v2#transactions) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/TransactionTests.cs)
-* [`client.Users`](https://developers.coinbase.com/api/v2#users) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/UserTests.cs)
-* [`client.Withdrawals`](https://developers.coinbase.com/api/v2#withdrawals) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseClient.Tests/Endpoints/WithdrawlTests.cs)
+* [`client.Accounts`](https://developers.coinbase.com/api/v2#accounts) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/AccountTests.cs)
+* [`client.Addresses`](https://developers.coinbase.com/api/v2#addresses) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/AddressTests.cs)
+* [`client.Buys`](https://developers.coinbase.com/api/v2#buys) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/BuyTest.cs)
+* [`client.Deposits`](https://developers.coinbase.com/api/v2#deposits) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/DepositTests.cs)
+* [`client.PaymentMethods`](https://developers.coinbase.com/api/v2#payment-methods) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/PaymentMethodTest.cs)
+* [`client.Sells`](https://developers.coinbase.com/api/v2#sells) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/SellTest.cs)
+* [`client.Transactions`](https://developers.coinbase.com/api/v2#transactions) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/TransactionTests.cs)
+* [`client.Users`](https://developers.coinbase.com/api/v2#users) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/UserTests.cs)
+* [`client.Withdrawals`](https://developers.coinbase.com/api/v2#withdrawals) - [Examples](https://github.com/jackfreemancoder/CoinbaseEasyApi/blob/master/Source/CoinbaseApi.Tests/Endpoints/WithdrawlTests.cs)
 
 ### Pagination
 Some Coinbase [APIs support pagination. See developer docs here](https://developers.coinbase.com/api/v2#pagination). APIs that support pagination can specify an extra `PaginationOptions` object used to specify item page `limit` and other various options. The following code shows how to enumerate the first 3 pages where each page contains 5 buy transactions for an account.
@@ -183,7 +183,7 @@ You only need to call `.WithAutomaticOAuthTokenRefresh` once when creating the `
 Some APIs require **Two-Factor Authentication (2FA)**. To use APIs that require **2FA**, add a the `TwoFactorToken` header value before sending the request as shown below:
 ```csharp
 using Flurl.Http;
-using static CoinbaseClient.HeaderNames;
+using static CoinbaseApi.HeaderNames;
 
 //using OAuth Token
 var client = new CoinbaseClient(new OAuthConfig{ AccessToken = "..." });
